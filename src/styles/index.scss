@@ -1,0 +1,325 @@
+// variables & functions
+@import 'variables';
+
+// base & layouts
+@import 'base';
+
+// colors
+
+// components (buttons, card, navbar)
+@import 'components/card';
+
+//utilities
+
+
+.heading {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: $default-border-radius;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: $base-spacing;
+  padding: $base-padding;
+  margin: $base-margin;
+  box-shadow: $default-shadow;
+  cursor: pointer;
+  background-color: $neutral;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.btn:hover{
+  transform: translate(0px, -1px);
+  box-shadow: $hover-shadow;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+//primary buttons
+.btn-primary {
+    background-color: $primary;
+    color: $neutral;
+}
+.btn-primary:hover {
+  background-color: $primary-hover;
+  box-shadow: $hover-shadow;
+}
+.btn-primary:active {
+  transform: translateY(0.5px);
+}
+
+//success buttons
+.btn-success {
+    background-color: $success;
+    color: $neutral;
+}
+.btn-success:hover {
+  background-color: $success-hover;
+  box-shadow: $hover-shadow;
+}
+.btn-success:active {
+  transform: translateY(0.5px);
+}
+
+//warning buttons
+.btn-warning {
+    background-color: $warning;
+    color: $neutral;
+}
+.btn-warning:hover {
+  background-color: $warning-hover;
+  box-shadow: $hover-shadow;
+}
+.btn-warning:active {
+  transform: translateY(0.5px);
+}
+
+//info buttons
+.btn-info {
+    background-color: $info;
+    color: $neutral;
+}
+.btn-info:hover {
+  background-color: $info-hover;
+  box-shadow: $hover-shadow;
+}
+.btn-info:active {
+  transform: translateY(0.5px);
+}
+
+//secondary buttons
+.btn-secondary {
+    background-color: $secondary;
+    color: $neutral;
+}
+.btn-secondary:hover {
+  background-color: $secondary-hover;
+  box-shadow: $hover-shadow;
+}
+.btn-secondary:active {
+  transform: translateY(0.5px);
+
+}
+
+//text
+
+//input field
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Input Field Focus Style */
+input:focus {
+  border-color: #1d9a6c;
+  box-shadow: 0 0 0 2px #a3f7bf33;
+}
+
+
+
+
+
+
+
+//primary outlined button
+.btn-outlined-primary {
+    box-shadow: 0 0 0 1px $primary;
+    color: $primary;
+}
+.btn-outlined-primary:hover {
+  background-color: $primary;
+  box-shadow: 0 0 0 1px $primary;
+  color: $neutral;
+}
+
+//success outlined button
+.btn-outlined-success {
+    box-shadow: 0 0 0 1px $success;
+    color: $success;
+}
+.btn-outlined-success:hover {
+  background-color: $success;
+  box-shadow: 0 0 0 1px $success;
+  color: $neutral;
+}
+
+//warning outlined button
+.btn-outlined-warning {
+    box-shadow: 0 0 0 1px $warning;
+    color: $warning;
+}
+.btn-outlined-warning:hover {
+  background-color: $warning;
+  box-shadow: 0 0 0 1px $warning;
+  color: $neutral;
+}
+
+//info outlined button
+.btn-outlined-info {
+    box-shadow: 0 0 0 1px $info;
+    color: $info;
+}
+.btn-outlined-info:hover {
+  background-color: $info;
+  box-shadow: 0 0 0 1px $info;
+  color: $neutral;
+}
+
+//secondary outlined button
+.btn-outlined-secondary {
+    box-shadow: 0 0 0 1px $secondary;
+    color: $secondary;
+}
+.btn-outlined-secondary:hover {
+  background-color: $secondary;
+  box-shadow: 0 0 0 1px $secondary;
+  color: $neutral;
+}
+
+//primary link button
+
+.btn-link-primary {
+  color: $primary;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  box-shadow: none;
+  box-sizing: content-box;
+}
+
+.btn-link-primary::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: $primary;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-link-primary:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+//secondary link button
+.btn-link-secondary {
+  color: $secondary;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  box-shadow: none;
+  box-sizing: content-box;
+}
+.btn-link-secondary::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: $secondary;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn-link-secondary:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+//success link button
+.btn-link-success {
+  color: $success;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  box-shadow: none;
+  box-sizing: content-box;
+}
+.btn-link-success::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: $success;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn-link-success:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+//info link button
+.btn-link-info {
+  color: $info;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  box-shadow: none;
+  box-sizing: content-box;
+}
+.btn-link-info::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: $info;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn-link-info:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+//warning link button
+.btn-link-warning {
+  color: $warning;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  box-shadow: none;
+  box-sizing: content-box;
+}
+.btn-link-warning::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: $warning;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn-link-warning:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}

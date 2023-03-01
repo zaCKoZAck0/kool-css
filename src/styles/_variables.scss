@@ -1,0 +1,47 @@
+// theme colors
+$primary: #1d9a6c;
+$secondary: #000000;
+$accent: #a3f7bf;
+$neutral: #ffffff;
+$info: #87CEFA;
+$success: #32CD32;
+$warning: #FF6347;
+$background: #F2F4F8;
+
+//hovered theme colors
+$primary-hover:  #167e5a ;
+$secondary-hover: #2d2d2d;
+$accent-hover: #7ee4a7;
+$neutral-hover: #f2f2f2;
+$info-hover: #6db5d6;
+$success-hover: #269f26;
+$warning-hover: #e35c38;
+
+//dark theme colors
+// $primary-dark: #1d9a6c;
+// $secondary-dark: #ffffff;
+// $accent-dark: #a3f7bf;
+// $neutral-dark: #000000;
+// $info-dark: #87CEFA;
+// $success-dark: #32CD32;
+// $warning-dark: #FF6347;
+
+//spacing
+$base-spacing: 0.05rem;
+$base-padding: 0.5rem 1rem;
+$base-margin: 0.5rem;
+
+//shadow
+$default-shadow:0px 2px 5px rgba(0, 0, 0, 0.2);
+$hover-shadow:2 2 15px rgba(0, 0, 0, 0.25);
+
+//border
+$default-border-radius: 4px;
+$default-border-thickness: 1px;
+
+//font
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-2xl: $base-font-size * 3;
